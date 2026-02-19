@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Mastering JavaScript Objects</title>
+</head>
+<body>
+
+    <h2>Mastering JavaScript Objects</h2>
+    <p>Open the console (F12 → Console) to see the output.</p>
+
+    <script>
+
+    /******************************************************
+     MASTERING JAVASCRIPT OBJECTS – COMPLETE PROGRAM
+    ******************************************************/
+
+    console.log("===== 1. Key-Value Pairs =====");
+
+    const person = {
+        name: "Navya",
+        age: 20,
+        isStudent: true
+    };
+
+    console.log(person.name);
+    console.log(person["age"]);
+
+
+
+    console.log("===== 2. Pass-by-Value vs Pass-by-Reference =====");
+
+    // Primitive
+    let a = 10;
+    let b = a;
+    b = 25;
+
+    console.log("Primitive a:", a);
+    console.log("Primitive b:", b);
+
+    // Object
+    let obj1 = { value: 100 };
+    let obj2 = obj1;
+    obj2.value = 500;
+
+    console.log("Object obj1:", obj1.value);
+
+
+
+    console.log("===== 3. Object Functions & Methods =====");
+
+    const user = {
+        name: "Navya",
+        greet: function () {
+            return "Hello, " + this.name;
+        }
+    };
+
+    console.log(user.greet());
+
+
+
+    console.log("===== 4. Built-in Object Methods =====");
+
+    const car = {
+        brand: "Toyota",
+        model: "Camry"
+    };
+
+    car.year = 2024;
+    delete car.model;
+
+    console.log("Keys:", Object.keys(car));
+    console.log("Values:", Object.values(car));
+    console.log("Entries:", Object.entries(car));
+
+
+
+    console.log("===== 5. Freezing & Sealing Objects =====");
+
+    const settings = {
+        theme: "dark",
+        version: 1
+    };
+
+    Object.freeze(settings);
+    settings.theme = "light"; 
+    console.log("Frozen Object:", settings);
+
+    const config = { mode: "test" };
+    Object.seal(config);
+    config.mode = "production";
+    delete config.mode;
+
+    console.log("Sealed Object:", config);
+
+
+
+    console.log("===== 6. Keys, Values, Entries =====");
+
+    const product = {
+        id: 101,
+        name: "Laptop",
+        price: 50000
+    };
+
+    console.log("Keys:", Object.keys(product));
+    console.log("Values:", Object.values(product));
+    console.log("Entries:", Object.entries(product));
+
+
+
+    console.log("===== 7. Constructor Function =====");
+
+    function Student(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    const s1 = new Student("Navya", 20);
+    const s2 = new Student("Ravi", 22);
+
+    console.log(s1);
+    console.log(s2);
+
+
+
+    console.log("===== 8. ES6 Classes =====");
+
+    class Employee {
+        constructor(name, salary) {
+            this.name = name;
+            this.salary = salary;
+        }
+
+        getDetails() {
+            return this.name + " earns " + this.salary;
+        }
+    }
+
+    const emp1 = new Employee("Navya", 50000);
+    console.log(emp1.getDetails());
+
+
+
+    console.log("===== 9. Getters and Setters =====");
+
+    class BankAccount {
+        constructor(owner, balance) {
+            this.owner = owner;
+            this._balance = balance;
+        }
+
+        get balance() {
+            return this._balance;
+        }
+
+        set balance(amount) {
+            if (amount >= 0) {
+                this._balance = amount;
+            } else {
+                console.log("Invalid amount");
+            }
+        }
+    }
+
+    const account = new BankAccount("Navya", 1000);
+    console.log("Initial Balance:", account.balance);
+
+    account.balance = 2000;
+    console.log("Updated Balance:", account.balance);
+
+
+
+    console.log("===== 10. Iterating with For...In =====");
+
+    const book = {
+        title: "JavaScript Basics",
+        author: "John",
+        price: 299
+    };
+
+    for (let key in book) {
+        console.log(key + ": " + book[key]);
+    }
+
+    console.log("===== PROGRAM COMPLETED =====");
+
+    </script>
+
+</body>
+</html>
