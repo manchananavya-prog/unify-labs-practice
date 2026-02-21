@@ -1,11 +1,28 @@
-<!-- 
-  DAY 20 PRACTICE LAB
-  Practice the concepts from today's video lecture below.
--->
-<div id="root">
-    <div class="lab-container">
-        <h1>Lab <span>Session</span> {{ selectedDay }}</h1>
-        <p>Console is active. Use the <strong>JS Tab</strong> to practice logic.</p>
-        <div id="display" class="debug-panel">Waiting for JS input...</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌦 Live Weather App</h1>
+
+        <input type="text" id="cityInput" placeholder="Enter City Name">
+        <button id="searchBtn">Search</button>
+        <button id="toggleBtn">🌙 Dark Mode</button>
+
+        <div id="loader" class="loader"></div>
+
+        <div class="weather-box">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
     </div>
-</div>
+
+<script src="script.js"></script>
+</body>
+</html>
