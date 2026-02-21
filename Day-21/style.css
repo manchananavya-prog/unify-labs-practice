@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+/* Theme Colors */
+.blue { border-top: 6px solid #007bff; }
+.green { border-top: 6px solid #28a745; }
+.purple { border-top: 6px solid #6f42c1; }
+.red { border-top: 6px solid #dc3545; }
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+}
