@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Crypto Tracker</h2>
+
+    <input type="text" id="searchInput" placeholder="Search coin...">
+
+    <select id="sortSelect">
+        <option value="default">Sort By</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+    </select>
+
+    <button id="themeToggle">Toggle Theme</button>
+</header>
+
+<div id="notification"></div>
+<div id="loader" class="loader hidden"></div>
+<div id="cryptoContainer" class="container"></div>
+
+<!-- IMPORTANT -->
+<script type="module" src="App.js"></script>
+
+</body>
+</html>
