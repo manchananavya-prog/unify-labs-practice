@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #2a5298;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

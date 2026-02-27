@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unify Labs CRUD Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Unify Labs Product Manager</h1>
+
+        <!-- Add Product -->
+        <div class="card">
+            <h2>Add Product</h2>
+            <input type="text" id="name" placeholder="Product Name">
+            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="stock" placeholder="Stock">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+
+        <!-- Update Stock -->
+        <div class="card">
+            <h2>Update Stock</h2>
+            <input type="text" id="updateId" placeholder="Product ID">
+            <input type="number" id="newStock" placeholder="New Stock">
+            <button onclick="updateStock()">Update Stock</button>
+        </div>
+
+        <!-- Delete Product -->
+        <div class="card">
+            <h2>Delete Product</h2>
+            <input type="text" id="deleteId" placeholder="Product ID">
+            <button onclick="deleteProduct()">Delete Product</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
