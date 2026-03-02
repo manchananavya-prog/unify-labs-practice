@@ -1,0 +1,42 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: darkblue;
+}
+
+.container {
+  margin: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+#productList {
+  margin-top: 20px;
+}
+
+.product {
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 250px;
+  box-shadow: 0 0 5px gray;
+}
