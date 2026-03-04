@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unify Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Unify Store</h1>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <button onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</button>
+</header>
+
+<section id="productsSection">
+    <div id="loader" class="loader"></div>
+    <div id="productsGrid" class="grid"></div>
+</section>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart hidden">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p id="emptyCart">Your cart is empty 🛍️</p>
+    <h3>Total: ₹<span id="cartTotal">0</span></h3>
+
+    <h3>Checkout</h3>
+    <form id="checkoutForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Address" required>
+        <button type="submit">Buy Now</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
